@@ -20,7 +20,7 @@ npm install      # download the libraries the app uses (first time only)
 npm start        # start the development server
 ```
 
-A QR code appears in the terminal. Scan it with Expo Go (Android) or the Camera app (iPhone). Your phone and computer must be on the same Wi-Fi.
+
 
 ## Scripts
 
