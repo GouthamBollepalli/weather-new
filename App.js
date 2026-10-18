@@ -68,7 +68,7 @@ export default function App() {
 
   return (
     <ScrollView style={styles.screen} contentContainerStyle={styles.content} keyboardShouldPersistTaps="handled">
-      <Text style={styles.title}>Weather Today</Text>
+      <Text style={styles.title}>My Weather</Text>
 
       <SearchBar onSearch={handleSearch} disabled={loading} />
 
