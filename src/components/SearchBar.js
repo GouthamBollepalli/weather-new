@@ -29,7 +29,7 @@ export default function SearchBar({ onSearch, disabled }) {
         disabled={!canSearch}
         accessibilityRole="button"
       >
-        <Text style={styles.buttonText}>Search</Text>
+        <Text style={styles.buttonText}>Go</Text>
       </Pressable>
     </View>
   );
