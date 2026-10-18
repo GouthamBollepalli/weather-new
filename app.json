@@ -1,13 +1,14 @@
 {
   "expo": {
-    "name": "weather-now",
+    "name": "WeatherNow",
     "slug": "weather-now",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.gouthambollepalli.weathernow"
     },
     "android": {
       "adaptiveIcon": {
@@ -15,7 +16,8 @@
         "foregroundImage": "./assets/android-icon-foreground.png",
         "backgroundImage": "./assets/android-icon-background.png",
         "monochromeImage": "./assets/android-icon-monochrome.png"
-      }
+      },
+      "package": "com.gouthambollepalli.weathernow"
     },
     "web": {
       "favicon": "./assets/favicon.png"

@@ -39,3 +39,13 @@ yarn-error.*
 # generated native folders
 /ios
 /android
+
+# local env files (keep .env.example, which has no real values)
+.env
+
+# Visual Studio and VS Code settings
+.vs/
+.vscode/
+
+# test coverage reports
+coverage/
