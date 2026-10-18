@@ -20,7 +20,7 @@ test('searching for a city and opening it shows its weather', async () => {
   await render(<App />);
 
   await user.type(screen.getByLabelText('City name'), 'Hyderabad');
-  await user.press(screen.getByRole('button', { name: 'Search' }));
+  await user.press(screen.getByRole('button', { name: 'Go' }));
   await user.press(await screen.findByLabelText('Show weather for Hyderabad'));
 
   expect(await screen.findByText('30°C')).toBeOnTheScreen();
@@ -36,7 +36,7 @@ test('a city can be added to favourites', async () => {
   await render(<App />);
 
   await user.type(screen.getByLabelText('City name'), 'Hyderabad');
-  await user.press(screen.getByRole('button', { name: 'Search' }));
+  await user.press(screen.getByRole('button', { name: 'Go' }));
   await user.press(await screen.findByLabelText('Show weather for Hyderabad'));
   await user.press(await screen.findByLabelText('Add to favourites'));
 
@@ -50,7 +50,7 @@ test('shows a message when no city matches', async () => {
   await render(<App />);
 
   await user.type(screen.getByLabelText('City name'), 'Nowhereville');
-  await user.press(screen.getByRole('button', { name: 'Search' }));
+  await user.press(screen.getByRole('button', { name: 'Go' }));
 
   expect(await screen.findByText('No cities found for "Nowhereville".')).toBeOnTheScreen();
 });
